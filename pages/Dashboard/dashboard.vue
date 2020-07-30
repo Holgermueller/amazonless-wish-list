@@ -2,6 +2,10 @@
   <div>
     <h1>this is the dashboard.</h1>
 
+    <ListFilter />
+
+    <AddItemDialog />
+
     <div>
       <v-card>
         <v-card-title></v-card-title>
@@ -15,12 +19,16 @@
 
 <script>
 import ItemDisplay from "./itemDisplay";
+import ListFilter from "../../components/filters/listFilter";
+import AddItemDialog from "../../components/dialogs/addItem/addItemDialog";
 
 export default {
   name: "Dashboard",
 
   components: {
-    ItemDisplay
+    ItemDisplay,
+    ListFilter,
+    AddItemDialog
   },
 
   data() {
