@@ -5,7 +5,7 @@
         <v-tab v-for="(form, index) in forms" :key="index">
           <h2>
             <span :class="form.icon"></span>
-            {{ form.name }}
+            {{ form.formName }}
           </h2>
         </v-tab>
       </v-tabs>
@@ -18,10 +18,11 @@
             </v-card-title>
 
             <v-card-text>
-              <div v-if="form.name === 'register'">
+              <div v-if="form.formName === 'Register'">
                 <RegistrationForm />
               </div>
-              <div else>
+
+              <div v-else>
                 <LoginForm />
               </div>
             </v-card-text>
@@ -49,12 +50,13 @@ export default {
       tab: null,
       forms: [
         {
-          name: "Register",
+          formName: "Register",
           message: "Register Here:",
           icon: "mdi mdi-pen"
         },
+
         {
-          name: "Login",
+          formName: "Log in",
           message: "Log In Here:",
           icon: "mdi mdi-keyboard"
         }

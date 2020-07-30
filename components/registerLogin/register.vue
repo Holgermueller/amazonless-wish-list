@@ -76,7 +76,7 @@
 
 <script>
 export default {
-  name: " RegistrationForm",
+  name: "RegistrationForm",
 
   data() {
     return {
