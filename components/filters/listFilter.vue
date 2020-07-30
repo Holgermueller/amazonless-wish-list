@@ -5,6 +5,7 @@
       label="Filter List..."
       outlined
       clearable
+      :rules="[filterThroughList]"
     ></v-text-field>
   </div>
 </template>
@@ -17,6 +18,12 @@ export default {
     return {
       filterTerm: ""
     };
+  },
+
+  computed: {
+    filterThroughList() {
+      console.log(this.filterTerm);
+    }
   }
 };
 </script>
