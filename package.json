@@ -10,6 +10,8 @@
     "test": "jest"
   },
   "dependencies": {
+    "@nuxtjs/firebase": "^6.1.1",
+    "firebase": "^7.17.1",
     "nuxt": "^2.14.0"
   },
   "devDependencies": {
