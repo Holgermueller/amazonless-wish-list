@@ -1,7 +1,7 @@
 <template>
   <v-app dark>
-    <v-app-bar :clipped-left="clipped" fixed app>
-      <router-link to="/dashboard">
+    <v-app-bar fixed app>
+      <router-link to="/Dashboard/dashboard">
         <v-toolbar-title v-text="title" />
       </router-link>
 
@@ -14,7 +14,7 @@
       </v-container>
     </v-main>
 
-    <v-footer :absolute="!fixed" app>
+    <v-footer app>
       <span>&copy; {{ new Date().getFullYear() }} Holger Mueller</span>
     </v-footer>
   </v-app>
